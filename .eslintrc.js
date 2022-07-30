@@ -26,5 +26,8 @@ module.exports = {
     'no-whitespace-before-property': 'error', // запрещает пробелы перед методами 
     'no-trailing-spaces': 'off', // если включить, то будет ругаться на пробелы в конце строк
     'no-multi-spaces': 'error', // запрещает несколько подряд идущих пробелов
+    "vue/comment-directive": ["error", {
+      "reportUnusedDisableDirectives": false
+    }]
   }
 }
