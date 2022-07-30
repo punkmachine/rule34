@@ -11,8 +11,8 @@ module.exports = {
     parser: '@babel/eslint-parser'
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // нет консоль логам!
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // нет дебаггеру!
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off', // нет консоль логам в проде!
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off', // нет дебаггеру!
     'no-var': 'error', // нельзя использоваь var
     'no-duplicate-imports': 'error', // нельзя делать дублирующиеся импорты
     'no-duplicate-case': 'error', // нельзя использовать дублирующийся case
